@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-21T08:00:00+07:00",
+  "summary": "Demonstration data, not a scan of a real user profile.",
+  "detectedSkillCount": 6,
+  "availableCount": 2,
+  "updatedCount": 1,
+  "errorCount": 0,
+  "warnings": [],
+  "providerStats": [
+    {"name":"Codex","detected":true,"skillCount":4,"status":"Demo","detail":"Example inventory"},
+    {"name":"Claude Code","detected":true,"skillCount":3,"status":"Demo","detail":"Example inventory"}
+  ],
+  "rows": [
+    {"name":"project-helper","current":"1.0.0","latest":"1.0.0","status":"ตรงกับต้นทาง","canUpdate":false,"providers":["Codex"],"scope":"user","skillPath":"C:\\Users\\Example\\.codex\\skills\\project-helper","detail":"Example skill and path for the project screenshot.","identity":"demo:project-helper"},
+    {"name":"code-review","current":"1.2.0","latest":"1.3.0","status":"มีอัปเดต","canUpdate":true,"providers":["Codex"],"scope":"plugin","skillPath":"C:\\Example\\plugins\\code-review","detail":"Example supported update from an installed plugin.","identity":"demo:code-review"},
+    {"name":"test-generator","current":"2.0.0","latest":"2.0.0","status":"อัปเดตแล้ว","canUpdate":false,"providers":["Claude Code"],"scope":"plugin","skillPath":"C:\\Example\\plugins\\test-generator","detail":"Example update result.","identity":"demo:test-generator"},
+    {"name":"team-conventions","current":"1.0.0","latest":"1.0.0","status":"ตรงกับต้นทาง","canUpdate":false,"providers":["Codex","Claude Code"],"scope":"project","skillPath":"C:\\Example\\project\\.agents\\skills\\team-conventions","detail":"Example shared project skill.","identity":"demo:team-conventions"},
+    {"name":"local-notes","current":"ไม่ระบุ","latest":"ไม่ระบุ","status":"ดูแลเอง","canUpdate":false,"providers":["Claude Code"],"scope":"user","skillPath":"C:\\Users\\Example\\.claude\\skills\\local-notes","detail":"No configured update source. Managed by the user.","identity":"demo:local-notes"},
+    {"name":"release-checklist","current":"1.0.0","latest":"1.1.0","status":"มีอัปเดต","canUpdate":true,"providers":["Codex"],"scope":"plugin","skillPath":"C:\\Example\\plugins\\release-checklist","detail":"Example supported update from an installed plugin.","identity":"demo:release-checklist"}
+  ]
+}

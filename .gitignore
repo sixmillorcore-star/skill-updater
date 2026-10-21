@@ -1,0 +1,15 @@
+/data/
+/install-state.json
+/SkillUpdater.exe
+/*.pdb
+/*.tmp
+/dist/
+/work/
+/tests/.artifacts/
+/tests/*-tests-*/
+/tests/backend-integration-*/
+/tests/locale-test-data-*/
+/tests/*.exe
+/tests/*.dll
+.DS_Store
+Thumbs.db

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "codexHome": "%USERPROFILE%/.codex",
+  "codexPath": null,
+  "autoDiscover": true,
+  "discoverProjects": true,
+  "skillRoots": [],
+  "claudeSkillRoots": [],
+  "sharedSkillRoots": [],
+  "projectRoots": [],
+  "localSources": []
+}

@@ -1,0 +1,28 @@
+SKILL UPDATER FOR CODEX AND CLAUDE CODE
+
+1. Extract this entire ZIP into a folder you want to keep.
+2. Open SkillUpdater.exe. Do not move it away from the scripts, settings.json,
+   languages folder, or icon assets.
+3. Check again refreshes detected skills and supported versions.
+   Update ready updates all eligible entries, including filtered-out entries.
+4. Aa opens language, font, and text-size settings. Windows language is the default.
+
+OPTIONAL SCHEDULE
+Run Install.cmd to add per-user shortcuts and two tasks:
+- 08:00 local time: supported automatic updates while signed in, only when the
+  computer was on before 08:00. Missed runs do not catch up or wake the computer.
+- Windows sign-in: a manual check window after about 20 seconds.
+Run Uninstall.cmd in this folder before moving an installed copy.
+
+Updates require a supported source and, for plugin updates, the relevant provider
+CLI. Local skills without a known source remain manual. CLI/API availability and
+cached provider catalogs can affect version checks.
+
+Reports, history, backups, and interface preferences stay under data/. They may
+contain local file paths. Keep that folder private.
+
+Requirements: Windows, .NET Framework, and Windows PowerShell 5.1.
+The release binary is not code-signed.
+
+Source, detailed instructions, Thai guide, and validation:
+https://github.com/sixmillorcore-star/skill-updater
