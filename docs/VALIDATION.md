@@ -26,9 +26,9 @@ The runner starts each suite in its own Windows PowerShell 5.1 process so that m
 
 The 48 skill-backend PowerShell fixture cases mock external update commands. They do not install, remove, or update the reader's actual skills or plugins. Discovery and self-update tests create their own temporary fixture trees. Locale and app-update UI tests do not display application windows. App-update engine tests use local release metadata and archives rather than publishing test releases.
 
-## Recorded desktop UI validation
+## Recorded desktop UI validation (v1.0.0)
 
-The following local desktop checks were completed while developing this version. Their full native rendering harnesses are not included in the initial repository test runner; the table records the tested scope rather than claiming that the included test runner repeats them.
+The following local desktop checks were completed for the original interface. Their full native rendering harnesses are not included in the repository test runner; the table records the tested scope rather than claiming that the included test runner repeats them. Version 1.1.0 adds the offscreen app-update UI checks listed above and keeps the main layout rows unchanged.
 
 | Local check | Result and scope |
 | --- | --- |
@@ -38,6 +38,12 @@ The following local desktop checks were completed while developing this version.
 | Live interaction | 10 checks passed for language/font switching, raw row identity and provider preservation, localized searching, global update eligibility, busy-close behavior, and appearance Apply/Cancel. |
 
 Actual display DPI for these desktop checks was 96. Native rendering at 120/144 DPI was not exercised by the full minimum-window matrix. Character coverage also depends on the fonts and Windows language support installed on the machine. Long skill names can shorten in table cells; selecting a row exposes the full name, path, and detail in the scrollable pane.
+
+## App release update validation (v1.1.0)
+
+After publication, an isolated client with its test-only installed version set to 1.0.0 detected the real public v1.1.0 release, downloaded its Windows ZIP over HTTPS, and verified GitHub's SHA-256 digest plus the complete manifest and all 34 package files. The production client at version 1.1.0 correctly reported no newer version.
+
+The C# installer launch and PowerShell helper were also exercised together in a temporary path containing spaces and Thai characters. The test parent exited naturally after the ready handshake; 33 runtime files matched the release hashes, the old executable was retained in the backup, and personal settings, interface preferences, and installation state were preserved. GUI restart was disabled in that isolated test copy. The installed local app was then upgraded using the same helper, with configuration hashes and both scheduled tasks checked against their previous values. No Computer Use was used for the v1.1.0 checks.
 
 ## Provider coverage
 
