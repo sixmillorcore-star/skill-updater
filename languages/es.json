@@ -90,5 +90,21 @@
   "scope.synced": "Sincronizado",
   "scope.admin": "Administrador",
   "scope.enterprise": "Empresa",
-  "scope.managed": "Gestionado"
+  "scope.managed": "Gestionado",
+  "appUpdate.title": "Actualizar aplicación",
+  "appUpdate.current": "Instalada: v{0}",
+  "appUpdate.latest": "Disponible: v{0}",
+  "appUpdate.check": "Buscar actualizaciones",
+  "appUpdate.update": "Actualizar y reiniciar",
+  "appUpdate.ready": "Hay una nueva versión de Skill Updater disponible.",
+  "appUpdate.checking": "Comprobando GitHub…",
+  "appUpdate.downloading": "Descargando y verificando la actualización…",
+  "appUpdate.currentStatus": "Tienes la última versión.",
+  "appUpdate.initial": "Buscar una nueva versión de Skill Updater en GitHub.",
+  "appUpdate.failed": "No se pudo actualizar la aplicación: {0}",
+  "appUpdate.busy": "Espera a que termine la operación de skills antes de actualizar la aplicación.",
+  "appUpdate.restart": "La aplicación se cerrará, instalará la actualización y se abrirá de nuevo. Se conservarán los ajustes y skills.",
+  "appUpdate.notice": "Skill Updater v{0} está disponible. Abre Actualizar aplicación para instalarla.",
+  "appUpdate.installing": "Preparando el reinicio…",
+  "appUpdate.updated": "Skill Updater se actualizó a v{0}."
 }

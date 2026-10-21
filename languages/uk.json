@@ -90,5 +90,21 @@
   "scope.synced": "Синхронізовано",
   "scope.admin": "Адміністратор",
   "scope.enterprise": "Організація",
-  "scope.managed": "Керована"
+  "scope.managed": "Керована",
+  "appUpdate.title": "Оновлення програми",
+  "appUpdate.current": "Встановлено: v{0}",
+  "appUpdate.latest": "Доступно: v{0}",
+  "appUpdate.check": "Перевірити оновлення",
+  "appUpdate.update": "Оновити й перезапустити",
+  "appUpdate.ready": "Доступна нова версія Skill Updater.",
+  "appUpdate.checking": "Перевірка GitHub…",
+  "appUpdate.downloading": "Завантаження та перевірка оновлення…",
+  "appUpdate.currentStatus": "Ви використовуєте останню версію.",
+  "appUpdate.initial": "Перевірити нову версію Skill Updater на GitHub.",
+  "appUpdate.failed": "Не вдалося оновити програму: {0}",
+  "appUpdate.busy": "Дочекайтеся завершення поточної операції з навичками перед оновленням програми.",
+  "appUpdate.restart": "Програма закриється, встановить оновлення й відкриється знову. Налаштування та навички збережуться.",
+  "appUpdate.notice": "Доступна Skill Updater v{0}. Відкрийте оновлення програми для встановлення.",
+  "appUpdate.installing": "Підготовка до перезапуску…",
+  "appUpdate.updated": "Skill Updater оновлено до v{0}."
 }

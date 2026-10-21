@@ -19,9 +19,12 @@ The runner starts each suite in its own Windows PowerShell 5.1 process so that m
 | Discovery | 13 cases | User/system/project skill discovery, disabled entries, installed plugin versions, shared paths, junction deduplication, and environment precedence. |
 | Claude support | 16 cases | Local registry/scopes, marketplace metadata, disabled settings, backup/update plans, and mocked CLI outcomes. |
 | Backend integration | 8 cases | Provider combination, partial results, absent CLI paths, and mocked post-update rescanning. |
-| Locale support | 7,317 assertions | All 20 language packs and 92 keys per pack, placeholders, culture/RTL metadata, explicit English fallback, preferences, and installed font selection. |
+| Locale support | 8,581 assertions | All 20 language packs and 108 keys per pack, placeholders, culture/RTL metadata, explicit English fallback, preferences, and installed font selection. |
+| App update engine | 67 assertions | Stable versions, downgrade rejection, official release URLs, SHA-256 checks, complete manifests, corrupt downloads, unsafe ZIP entries, Windows ZIP separators, and failed-stage cleanup. |
+| App update installer | 54 assertions | Isolated replacement and backup, settings/data preservation, failed-write rollback, locked files, and parent-process handoff. |
+| App update UI | 4,306 assertions | Offscreen geometry across 20 languages and five font sizes, action states, update-close guards, and main-window version button at 640 × 460. |
 
-The 48 PowerShell fixture cases mock external update commands. They do not install, remove, or update the reader's actual skills or plugins. Discovery tests create and inspect their own temporary fixture trees. Locale tests do not open application windows.
+The 48 skill-backend PowerShell fixture cases mock external update commands. They do not install, remove, or update the reader's actual skills or plugins. Discovery and self-update tests create their own temporary fixture trees. Locale and app-update UI tests do not display application windows. App-update engine tests use local release metadata and archives rather than publishing test releases.
 
 ## Recorded desktop UI validation
 

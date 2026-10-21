@@ -90,5 +90,21 @@
   "scope.synced": "已同步",
   "scope.admin": "管理員",
   "scope.enterprise": "企業",
-  "scope.managed": "受管理"
+  "scope.managed": "受管理",
+  "appUpdate.title": "應用程式更新",
+  "appUpdate.current": "已安裝：v{0}",
+  "appUpdate.latest": "可用版本：v{0}",
+  "appUpdate.check": "檢查程式更新",
+  "appUpdate.update": "更新並重新啟動",
+  "appUpdate.ready": "Skill Updater 有新版本可用。",
+  "appUpdate.checking": "正在檢查 GitHub…",
+  "appUpdate.downloading": "正在下載並驗證更新…",
+  "appUpdate.currentStatus": "目前已是最新版本。",
+  "appUpdate.initial": "在 GitHub 上檢查 Skill Updater 的新版本。",
+  "appUpdate.failed": "無法更新程式：{0}",
+  "appUpdate.busy": "請等待目前的技能操作完成後再更新程式。",
+  "appUpdate.restart": "程式將關閉、安裝更新並重新開啟。設定和技能會保留。",
+  "appUpdate.notice": "Skill Updater v{0} 已發布。開啟程式更新以安裝。",
+  "appUpdate.installing": "正在準備重新啟動…",
+  "appUpdate.updated": "Skill Updater 已更新至 v{0}。"
 }

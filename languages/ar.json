@@ -90,5 +90,21 @@
   "scope.synced": "تمت المزامنة",
   "scope.admin": "المسؤول",
   "scope.enterprise": "المؤسسة",
-  "scope.managed": "خاضع للإدارة"
+  "scope.managed": "خاضع للإدارة",
+  "appUpdate.title": "تحديث التطبيق",
+  "appUpdate.current": "الإصدار المثبت: v{0}",
+  "appUpdate.latest": "الإصدار المتاح: v{0}",
+  "appUpdate.check": "التحقق من تحديثات التطبيق",
+  "appUpdate.update": "تحديث وإعادة تشغيل",
+  "appUpdate.ready": "يتوفر إصدار جديد من Skill Updater.",
+  "appUpdate.checking": "جارٍ التحقق من GitHub…",
+  "appUpdate.downloading": "جارٍ تنزيل التحديث والتحقق منه…",
+  "appUpdate.currentStatus": "أنت تستخدم أحدث إصدار.",
+  "appUpdate.initial": "تحقق من وجود إصدار أحدث من Skill Updater على GitHub.",
+  "appUpdate.failed": "تعذر تحديث التطبيق: {0}",
+  "appUpdate.busy": "انتظر انتهاء عملية المهارات الحالية قبل تحديث التطبيق.",
+  "appUpdate.restart": "سيُغلق التطبيق ويُثبت التحديث ثم يُفتح مجددًا. ستبقى الإعدادات والمهارات محفوظة.",
+  "appUpdate.notice": "يتوفر Skill Updater v{0}. افتح تحديث التطبيق لتثبيته.",
+  "appUpdate.installing": "جارٍ التحضير لإعادة التشغيل…",
+  "appUpdate.updated": "تم تحديث Skill Updater إلى v{0}."
 }

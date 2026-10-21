@@ -90,5 +90,21 @@
   "scope.synced": "Đã đồng bộ",
   "scope.admin": "Quản trị viên",
   "scope.enterprise": "Doanh nghiệp",
-  "scope.managed": "Được quản lý"
+  "scope.managed": "Được quản lý",
+  "appUpdate.title": "Cập nhật ứng dụng",
+  "appUpdate.current": "Đã cài: v{0}",
+  "appUpdate.latest": "Có sẵn: v{0}",
+  "appUpdate.check": "Kiểm tra bản cập nhật",
+  "appUpdate.update": "Cập nhật và khởi động lại",
+  "appUpdate.ready": "Có phiên bản Skill Updater mới.",
+  "appUpdate.checking": "Đang kiểm tra GitHub…",
+  "appUpdate.downloading": "Đang tải và xác minh bản cập nhật…",
+  "appUpdate.currentStatus": "Bạn đang dùng phiên bản mới nhất.",
+  "appUpdate.initial": "Kiểm tra phiên bản Skill Updater mới trên GitHub.",
+  "appUpdate.failed": "Không thể cập nhật ứng dụng: {0}",
+  "appUpdate.busy": "Hãy đợi thao tác với skill hiện tại hoàn tất trước khi cập nhật ứng dụng.",
+  "appUpdate.restart": "Ứng dụng sẽ đóng, cài bản cập nhật rồi mở lại. Cài đặt và skill được giữ nguyên.",
+  "appUpdate.notice": "Đã có Skill Updater v{0}. Mở Cập nhật ứng dụng để cài đặt.",
+  "appUpdate.installing": "Đang chuẩn bị khởi động lại…",
+  "appUpdate.updated": "Đã cập nhật Skill Updater lên v{0}."
 }

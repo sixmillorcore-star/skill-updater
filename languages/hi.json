@@ -90,5 +90,21 @@
   "scope.synced": "सिंक किया गया",
   "scope.admin": "व्यवस्थापक",
   "scope.enterprise": "संगठन",
-  "scope.managed": "प्रबंधित"
+  "scope.managed": "प्रबंधित",
+  "appUpdate.title": "ऐप अपडेट",
+  "appUpdate.current": "इंस्टॉल है: v{0}",
+  "appUpdate.latest": "उपलब्ध है: v{0}",
+  "appUpdate.check": "ऐप अपडेट जाँचें",
+  "appUpdate.update": "अपडेट करें और फिर खोलें",
+  "appUpdate.ready": "Skill Updater का नया संस्करण उपलब्ध है।",
+  "appUpdate.checking": "GitHub जाँचा जा रहा है…",
+  "appUpdate.downloading": "अपडेट डाउनलोड और सत्यापित किया जा रहा है…",
+  "appUpdate.currentStatus": "आप नवीनतम संस्करण इस्तेमाल कर रहे हैं।",
+  "appUpdate.initial": "GitHub पर Skill Updater का नया संस्करण जाँचें।",
+  "appUpdate.failed": "ऐप अपडेट नहीं हो सका: {0}",
+  "appUpdate.busy": "ऐप अपडेट करने से पहले मौजूदा स्किल प्रक्रिया पूरी होने दें।",
+  "appUpdate.restart": "ऐप बंद होगा, अपडेट इंस्टॉल करेगा और फिर खुलेगा। सेटिंग और स्किल सुरक्षित रहेंगे।",
+  "appUpdate.notice": "Skill Updater v{0} उपलब्ध है। इंस्टॉल करने के लिए ऐप अपडेट खोलें।",
+  "appUpdate.installing": "फिर से खोलने की तैयारी…",
+  "appUpdate.updated": "Skill Updater को v{0} में अपडेट कर दिया गया है।"
 }

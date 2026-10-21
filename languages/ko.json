@@ -90,5 +90,21 @@
   "scope.synced": "동기화됨",
   "scope.admin": "관리자",
   "scope.enterprise": "기업",
-  "scope.managed": "관리됨"
+  "scope.managed": "관리됨",
+  "appUpdate.title": "앱 업데이트",
+  "appUpdate.current": "설치됨: v{0}",
+  "appUpdate.latest": "새 버전: v{0}",
+  "appUpdate.check": "앱 업데이트 확인",
+  "appUpdate.update": "업데이트 후 다시 시작",
+  "appUpdate.ready": "새로운 Skill Updater 버전이 있습니다.",
+  "appUpdate.checking": "GitHub 확인 중…",
+  "appUpdate.downloading": "업데이트 다운로드 및 검증 중…",
+  "appUpdate.currentStatus": "최신 버전을 사용하고 있습니다.",
+  "appUpdate.initial": "GitHub에서 새로운 Skill Updater 버전을 확인합니다.",
+  "appUpdate.failed": "앱을 업데이트할 수 없습니다: {0}",
+  "appUpdate.busy": "현재 스킬 작업이 끝난 후 앱을 업데이트하세요.",
+  "appUpdate.restart": "앱을 닫고 업데이트를 설치한 다음 다시 엽니다. 설정과 스킬은 유지됩니다.",
+  "appUpdate.notice": "Skill Updater v{0} 버전이 있습니다. 앱 업데이트를 열어 설치하세요.",
+  "appUpdate.installing": "다시 시작 준비 중…",
+  "appUpdate.updated": "Skill Updater가 v{0} 버전으로 업데이트되었습니다."
 }

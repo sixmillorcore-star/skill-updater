@@ -34,6 +34,7 @@ namespace CodexSkillUpdater
             }
             bool daily = Has(args, "--daily");
             bool smoke = Has(args, "--smoke-test");
+            if (!smoke && AppUpdateInstaller.IsInstalling(AppDomain.CurrentDomain.BaseDirectory)) return 0;
             if (daily && !smoke)
             {
                 DateTimeOffset now = DateTimeOffset.Now;
@@ -276,6 +277,7 @@ namespace CodexSkillUpdater
                 providerButtons["ทั้งหมด"].Text = T("filter.all");
                 foreach (Button tab in providerButtons.Values) { hints.SetToolTip(tab, tab.Text); tab.AccessibleName = tab.Text; }
                 appearance.Text = "Aa"; appearance.AccessibleName = T("action.settings");
+                RefreshAppUpdateUi();
                 minimize.AccessibleName = T("action.minimize"); chromeClose.AccessibleName = T("action.close");
                 details.AccessibleName = T("details.title"); skills.AccessibleName = T("col.skill"); searchInput.AccessibleName = T("search.label");
                 hints.SetToolTip(appearance, T("settings.title")); hints.SetToolTip(update, T("action.updateHint"));
@@ -360,6 +362,7 @@ namespace CodexSkillUpdater
             chrome.MouseDown += drag; chromeTitle.MouseDown += drag;
             chrome.DoubleClick += delegate { MaximizedBounds = Screen.FromControl(this).WorkingArea; WindowState = WindowState == FormWindowState.Maximized ? FormWindowState.Normal : FormWindowState.Maximized; };
             chrome.Controls.Add(chromeTitle); chrome.Controls.Add(appearance); chrome.Controls.Add(captionHost);
+            BuildAppUpdateControl(chrome);
             layout.Controls.Add(chrome, 0, 0);
 
             Panel header = new Panel { Dock = DockStyle.Fill, BackColor = background, Margin = Padding.Empty, Size = new Size(718, 52) };
@@ -605,7 +608,7 @@ namespace CodexSkillUpdater
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (disposing) { refreshTimer.Dispose(); hints.Dispose(); columnFont.Dispose(); foreach (Font font in appearanceFonts) font.Dispose(); if (applicationImage != null) applicationImage.Dispose(); if (applicationIcon != null) applicationIcon.Dispose(); }
+            if (disposing) { DisposeAppUpdates(); refreshTimer.Dispose(); hints.Dispose(); columnFont.Dispose(); foreach (Font font in appearanceFonts) font.Dispose(); if (applicationImage != null) applicationImage.Dispose(); if (applicationIcon != null) applicationIcon.Dispose(); }
         }
 
         private void OnShown(object sender, EventArgs e)
@@ -655,12 +658,14 @@ namespace CodexSkillUpdater
             }
             if (daily) Hide();
             StartBackend(daily ? "Update" : "Check");
+            StartAppUpdates();
         }
 
         private void StartBackend(string mode)
         {
-            if (busy) return;
+            if (busy || appUpdateBusy || appUpdateHandoff) return;
             busy = true; busyMode = mode; update.Enabled = false; check.Enabled = false;
+            RefreshAppUpdateUi();
             progress.MarqueeAnimationSpeed = 28;
             summary.ForeColor = textColor;
             summary.Text = T(mode == "Update" ? "busy.updating" : "busy.checking");
@@ -841,7 +846,7 @@ namespace CodexSkillUpdater
             finally { EndPresentation(); }
         }
 
-        private void SetActionState() { update.Enabled = !busy && readyToUpdate; check.Enabled = !busy; }
+        private void SetActionState() { update.Enabled = !busy && !appUpdateBusy && !appUpdateHandoff && readyToUpdate; check.Enabled = !busy && !appUpdateBusy && !appUpdateHandoff; RefreshAppUpdateUi(); }
         private void ShowDetails(Dictionary<string, object> row)
         {
             RowDisplay view; string value = row != null && rowDisplayLookup.TryGetValue(row, out view) ? view.Details : FullDetails(row);
@@ -880,10 +885,10 @@ namespace CodexSkillUpdater
 
         private void OnClosing(object sender, FormClosingEventArgs e)
         {
-            if (busy && e.CloseReason == CloseReason.UserClosing)
+            if ((busy || appUpdateBusy) && !appUpdateHandoff && e.CloseReason == CloseReason.UserClosing)
             {
                 e.Cancel = true;
-                summary.Text = T("busy.close");
+                summary.Text = T(appUpdateBusy ? "appUpdate.downloading" : "busy.close");
             }
         }
 

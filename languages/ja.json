@@ -90,5 +90,21 @@
   "scope.synced": "同期済み",
   "scope.admin": "管理者",
   "scope.enterprise": "組織",
-  "scope.managed": "管理対象"
+  "scope.managed": "管理対象",
+  "appUpdate.title": "アプリの更新",
+  "appUpdate.current": "インストール済み: v{0}",
+  "appUpdate.latest": "利用可能: v{0}",
+  "appUpdate.check": "アプリの更新を確認",
+  "appUpdate.update": "更新して再起動",
+  "appUpdate.ready": "Skill Updater の新しいバージョンがあります。",
+  "appUpdate.checking": "GitHub を確認中…",
+  "appUpdate.downloading": "更新をダウンロードして検証中…",
+  "appUpdate.currentStatus": "最新バージョンを使用しています。",
+  "appUpdate.initial": "GitHub で Skill Updater の新しいバージョンを確認します。",
+  "appUpdate.failed": "アプリを更新できませんでした: {0}",
+  "appUpdate.busy": "スキルの処理が完了してからアプリを更新してください。",
+  "appUpdate.restart": "アプリを閉じ、更新をインストールして再起動します。設定とスキルは保持されます。",
+  "appUpdate.notice": "Skill Updater v{0} が利用可能です。アプリの更新を開いてインストールしてください。",
+  "appUpdate.installing": "再起動の準備中…",
+  "appUpdate.updated": "Skill Updater を v{0} に更新しました。"
 }

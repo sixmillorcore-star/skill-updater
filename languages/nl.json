@@ -90,5 +90,21 @@
   "scope.synced": "Gesynchroniseerd",
   "scope.admin": "Beheerder",
   "scope.enterprise": "Organisatie",
-  "scope.managed": "Beheerd"
+  "scope.managed": "Beheerd",
+  "appUpdate.title": "App bijwerken",
+  "appUpdate.current": "Geïnstalleerd: v{0}",
+  "appUpdate.latest": "Beschikbaar: v{0}",
+  "appUpdate.check": "App-updates zoeken",
+  "appUpdate.update": "Bijwerken en herstarten",
+  "appUpdate.ready": "Er is een nieuwe versie van Skill Updater beschikbaar.",
+  "appUpdate.checking": "GitHub wordt gecontroleerd…",
+  "appUpdate.downloading": "Update wordt gedownload en gecontroleerd…",
+  "appUpdate.currentStatus": "U gebruikt de nieuwste versie.",
+  "appUpdate.initial": "Zoek op GitHub naar een nieuwe versie van Skill Updater.",
+  "appUpdate.failed": "De app kon niet worden bijgewerkt: {0}",
+  "appUpdate.busy": "Wacht tot de huidige skill-bewerking is voltooid voordat u de app bijwerkt.",
+  "appUpdate.restart": "De app sluit, installeert de update en opent opnieuw. Uw instellingen en skills blijven behouden.",
+  "appUpdate.notice": "Skill Updater v{0} is beschikbaar. Open App bijwerken om deze te installeren.",
+  "appUpdate.installing": "Herstart wordt voorbereid…",
+  "appUpdate.updated": "Skill Updater is bijgewerkt naar v{0}."
 }

@@ -90,5 +90,21 @@
   "scope.synced": "Tersinkron",
   "scope.admin": "Administrator",
   "scope.enterprise": "Perusahaan",
-  "scope.managed": "Dikelola"
+  "scope.managed": "Dikelola",
+  "appUpdate.title": "Pembaruan aplikasi",
+  "appUpdate.current": "Terpasang: v{0}",
+  "appUpdate.latest": "Tersedia: v{0}",
+  "appUpdate.check": "Periksa pembaruan aplikasi",
+  "appUpdate.update": "Perbarui dan mulai ulang",
+  "appUpdate.ready": "Versi baru Skill Updater tersedia.",
+  "appUpdate.checking": "Memeriksa GitHub…",
+  "appUpdate.downloading": "Mengunduh dan memverifikasi pembaruan…",
+  "appUpdate.currentStatus": "Anda menggunakan versi terbaru.",
+  "appUpdate.initial": "Periksa versi baru Skill Updater di GitHub.",
+  "appUpdate.failed": "Tidak dapat memperbarui aplikasi: {0}",
+  "appUpdate.busy": "Tunggu operasi skill selesai sebelum memperbarui aplikasi.",
+  "appUpdate.restart": "Aplikasi akan ditutup, diperbarui, lalu dibuka kembali. Pengaturan dan skill tetap tersimpan.",
+  "appUpdate.notice": "Skill Updater v{0} tersedia. Buka Pembaruan aplikasi untuk memasangnya.",
+  "appUpdate.installing": "Menyiapkan mulai ulang…",
+  "appUpdate.updated": "Skill Updater telah diperbarui ke v{0}."
 }

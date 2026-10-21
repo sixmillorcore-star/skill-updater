@@ -6,6 +6,19 @@ SKILL UPDATER FOR CODEX AND CLAUDE CODE
 3. Check again refreshes detected skills and supported versions.
    Update ready updates all eligible entries, including filtered-out entries.
 4. Aa opens language, font, and text-size settings. Windows language is the default.
+5. The version button in the top bar opens App update. The app checks GitHub on
+   startup and about every six hours while open, and notifies you of new versions.
+   Select Update and restart to download, verify, install, and reopen the app.
+   App updates require your click; the 08:00 automatic action updates skills.
+
+APP UPDATES (VERSION 1.1.0 AND LATER)
+Your settings.json, data, skills, tasks, and shortcuts are preserved. Previous
+program files are backed up under data/app-updates, with rollback attempted if
+replacement fails. Finish skill operations and close other app instances first.
+The application folder must be writable. An internet connection is required.
+
+Version 1.0.0 needs one manual upgrade: close it and copy the latest ZIP's program
+files into the existing folder, preserving your settings.json and data folder.
 
 OPTIONAL SCHEDULE
 Run Install.cmd to add per-user shortcuts and two tasks:

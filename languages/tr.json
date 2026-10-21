@@ -90,5 +90,21 @@
   "scope.synced": "Eşitlendi",
   "scope.admin": "Yönetici",
   "scope.enterprise": "Kuruluş",
-  "scope.managed": "Yönetilen"
+  "scope.managed": "Yönetilen",
+  "appUpdate.title": "Uygulama güncellemesi",
+  "appUpdate.current": "Yüklü: v{0}",
+  "appUpdate.latest": "Kullanılabilir: v{0}",
+  "appUpdate.check": "Güncellemeleri denetle",
+  "appUpdate.update": "Güncelle ve yeniden başlat",
+  "appUpdate.ready": "Skill Updater’ın yeni bir sürümü kullanılabilir.",
+  "appUpdate.checking": "GitHub denetleniyor…",
+  "appUpdate.downloading": "Güncelleme indiriliyor ve doğrulanıyor…",
+  "appUpdate.currentStatus": "En son sürümü kullanıyorsunuz.",
+  "appUpdate.initial": "GitHub’da yeni bir Skill Updater sürümünü denetleyin.",
+  "appUpdate.failed": "Uygulama güncellenemedi: {0}",
+  "appUpdate.busy": "Uygulamayı güncellemeden önce mevcut beceri işleminin bitmesini bekleyin.",
+  "appUpdate.restart": "Uygulama kapanacak, güncellenecek ve yeniden açılacak. Ayarlarınız ve becerileriniz korunur.",
+  "appUpdate.notice": "Skill Updater v{0} kullanılabilir. Yüklemek için Uygulama güncellemesini açın.",
+  "appUpdate.installing": "Yeniden başlatmaya hazırlanıyor…",
+  "appUpdate.updated": "Skill Updater v{0} sürümüne güncellendi."
 }

@@ -14,6 +14,7 @@ The screenshot uses demonstration data and example paths.
 - Filters by app and searches skill names, sources, statuses, and file paths.
 - Checks available versions and updates only entries with a supported, verifiable source.
 - Keeps local backups before supported updates and records results in the `data` folder.
+- Checks GitHub for new versions of Skill Updater and lets you download, verify, and install them inside the app.
 - Offers a dark interface, a minimum window size of 640 × 460, selectable fonts, and four complete detail lines with scrolling for longer text.
 - Includes 20 interface languages. The default follows Windows; other selectable languages use an explicit English fallback when no translation is available.
 
@@ -25,8 +26,17 @@ Requires Windows, .NET Framework, and Windows PowerShell 5.1. Plugin updates als
 2. Open `SkillUpdater.exe`. Keep its PowerShell scripts, `languages` folder, icon, and `settings.json` beside it.
 3. Review the detected skills. Select **Check again** to refresh versions, or **Update ready** when supported updates are available.
 4. Use **Aa** to choose the interface language, font, and text size.
+5. Select the version button in the top bar to open **App update**.
 
 The update action applies to all eligible entries, including entries hidden by a filter. Checking versions does not install updates.
+
+### Update Skill Updater itself
+
+From version 1.1.0, the app checks the latest stable [GitHub Release](https://github.com/sixmillorcore-star/skill-updater/releases/latest) when it opens and about every six hours while open. A new version adds a mark to the version button and displays a notification. Open **App update**, then select **Update and restart**. You can also check manually there. App updates always require a click, including when the morning skill update runs automatically.
+
+The app downloads the matching Windows ZIP, verifies GitHub's SHA-256 asset digest and the package's file manifest, then installs after the current window closes. Your `settings.json`, `data` folder, skills, scheduled tasks, and shortcuts are preserved. The previous program files are backed up under `data/app-updates`; a failed file replacement attempts to restore them. Finish any skill operation and close other instances from the same folder before updating. The installation folder must be writable.
+
+Version 1.0.0 needs a one-time manual upgrade to enable this feature: close the app, extract the latest ZIP, and copy its program files into the existing folder **without replacing `settings.json` or deleting `data`**. Checksums verify downloaded content; the Windows binary is not code-signed.
 
 ### Optional startup and morning updates
 
@@ -76,6 +86,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Build.ps1
 ```
 
 Build before running `Install.cmd`. You can run the executable directly without installing scheduled tasks.
+
+`Package.ps1` builds the Windows release ZIP, its file manifest, and `SHA256SUMS.txt`. It uses `CurrentVersion` in `AppUpdate.cs`, which also supplies the executable's assembly and file versions through `AppVersion.cs`. An explicit `-Version` must match. Future releases must retain the asset name `SkillUpdater-vX.Y.Z-windows.zip`, the top-level `SkillUpdater` folder, and `app-update-manifest.json` for in-app updates to work.
 
 ## Validation
 

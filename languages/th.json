@@ -90,5 +90,21 @@
   "scope.synced": "ซิงก์แล้ว",
   "scope.admin": "ผู้ดูแล",
   "scope.enterprise": "องค์กร",
-  "scope.managed": "มีผู้ดูแล"
+  "scope.managed": "มีผู้ดูแล",
+  "appUpdate.title": "อัปเดตโปรแกรม",
+  "appUpdate.current": "ติดตั้งอยู่: v{0}",
+  "appUpdate.latest": "รุ่นใหม่: v{0}",
+  "appUpdate.check": "ตรวจอัปเดตโปรแกรม",
+  "appUpdate.update": "อัปเดตและเปิดใหม่",
+  "appUpdate.ready": "มี Skill Updater เวอร์ชันใหม่พร้อมให้อัปเดต",
+  "appUpdate.checking": "กำลังตรวจสอบ GitHub…",
+  "appUpdate.downloading": "กำลังดาวน์โหลดและตรวจสอบไฟล์อัปเดต…",
+  "appUpdate.currentStatus": "คุณใช้เวอร์ชันล่าสุดแล้ว",
+  "appUpdate.initial": "ตรวจหา Skill Updater เวอร์ชันใหม่จาก GitHub",
+  "appUpdate.failed": "อัปเดตโปรแกรมไม่สำเร็จ: {0}",
+  "appUpdate.busy": "รอให้การทำงานกับ Skill เสร็จก่อนอัปเดตโปรแกรม",
+  "appUpdate.restart": "โปรแกรมจะปิด ติดตั้งอัปเดต และเปิดใหม่ การตั้งค่าและ Skill จะยังอยู่",
+  "appUpdate.notice": "มี Skill Updater v{0} แล้ว เปิดเมนูอัปเดตโปรแกรมเพื่อติดตั้ง",
+  "appUpdate.installing": "กำลังเตรียมเปิดโปรแกรมใหม่…",
+  "appUpdate.updated": "อัปเดต Skill Updater เป็น v{0} แล้ว"
 }
